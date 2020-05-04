@@ -23,7 +23,8 @@ go env -w GOPROXY="https://goproxy.io,direct"
   - 指针地址 &i 和指针读值 *p
   - 结构体 struct
   - 数组 var a [2]string
-  - 数组切片 s[1:4]，长度len(s)和容量cap(s)，0值nil，make创建，range遍历
+  - 数组切片 s[1:4]，长度len(s)和容量cap(s)，0值nil，range遍历
+  - 创建 make
   - 映射 map
 - 方法、接口、其他
   - 方法 method，定义中有调用者

@@ -1,6 +1,5 @@
 package main
 
-// fixme cannot find module providing package golang.org/x/tour/pic: working directory is not part of a module
 import "golang.org/x/tour/pic"
 
 //实现 Pic。它应当返回一个长度为 dy 的切片，其中每个元素是一个长度为 dx，元素类型为 uint8 的切片。

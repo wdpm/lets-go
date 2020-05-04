@@ -1,6 +1,5 @@
 package main
 
-// fixme
 import (
 	"golang.org/x/tour/pic"
 	"image"

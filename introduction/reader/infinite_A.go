@@ -1,6 +1,5 @@
 package main
 
-// fixme
 import "golang.org/x/tour/reader"
 
 // 实现一个 Reader 类型，产生一个 ASCII 字符 'A' 的无限流。
@@ -15,3 +14,5 @@ func (r MyReader) Read(b []byte) (int, error) {
 func main() {
 	reader.Validate(MyReader{})
 }
+
+//OK!
