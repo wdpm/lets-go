@@ -25,9 +25,11 @@ go env -w GOPROXY="https://goproxy.io,direct"
   - 数组 var a [2]string
   - 数组切片 s[1:4]，长度len(s)和容量cap(s)，0值nil，make创建，range遍历
   - 映射 map
-- 方法和接口
-  - 方法 method，注意method定义可以有调用者
-  - 接口
+- 方法、接口、其他
+  - 方法 method，定义中有调用者
+  - 接口 interface
+  - 错误 error
+  - 图像 image
 - 并发
 
 
