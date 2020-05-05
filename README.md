@@ -31,6 +31,24 @@ Learn Go.
   - 错误 error
   - 图像 image
 - 并发
+  - 子程序 go routine
+  - 信道 chan，缓冲大小，主动关闭 close()
+  - select 语句等待多个通信操作
+  - 互斥锁 sync.Mutex
+  - Web 简易爬虫
+
+## 教程
+- [package 手册](https://go-zh.org/pkg/)
+- [Go 编程语言规范](https://go-zh.org/ref/spec)
+- [Go 并发模型](https://www.youtube.com/watch?v=f6kdp27TYZs)
+- [深入 Go 并发模型](https://www.youtube.com/watch?v=QDDwwePbDtw)
+- [通过通信共享内存](https://go-zh.org/doc/codewalk/sharemem/)
+- [Go: a simple programming environment](https://vimeo.com/53221558)
+- [Writing Web Applications](https://go-zh.org/doc/articles/wiki/)
+- [Go 中的一等函数](https://go-zh.org/doc/codewalk/functions/)
+
+## 书籍
+- [Go Web 编程](https://github.com/astaxie/build-web-application-with-golang)
 
 
 
