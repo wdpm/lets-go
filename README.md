@@ -7,13 +7,12 @@ Learn Go.
 ## 配置
 - [Setting GOPATH](https://github.com/golang/go/wiki/SettingGOPATH)
 - [Go Proxy](https://goproxy.io/)
-```bash
-go env -w GO111MODULE=on
-go env -w GOPROXY="https://goproxy.io,direct"
-```
+- [GoLand IDE Setting GOPATH](docs/GoLand-config.md)
 
 ## 入门
 > 参阅 [A Tour of Go Excercises](https://tour.go-zh.org/)
+
+- [如何写 Go 代码](docs/how-to-write-go-code.md)
 - 基础
   - 函数 func
   - 包 package

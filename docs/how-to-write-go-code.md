@@ -8,6 +8,10 @@ the import path prefix for all packages within the module.
 - the module `github.com/google/go-cmp` contains a package in the directory `cmp/`. 
 That package's import path is `github.com/google/go-cmp/cmp`.
 - Packages in the standard library do not have a module path prefix.
+- A repository contains one or more modules.
+```
+repository > module > package > source files
+```
 
 ## First Program
 > 请保证全局 GOPATH 已配置
@@ -60,3 +64,40 @@ That package's import path is `github.com/google/go-cmp/cmp`.
   ```
 
 ## 测试
+```go
+package morestrings
+
+import "testing"
+
+func TestReverseRunes(t *testing.T) {
+	type args struct {
+		s string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		// Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := ReverseRunes(tt.args.s); got != tt.want {
+				t.Errorf("ReverseRunes() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+```
+- 选定 hello/morestrings/reverse.go#ReverseRunes，使用GoLand IDE的Alt+ Insert快捷键快速创建测试文件。
+- 添加测试用例
+```
+// Add test cases.
+{"case 1", args{s: "123"}, "321"},
+{"case 2", args{s: "dlrow ,olleH"}, "Hello, world"},
+```
+- 在 hello/morestrings/ 目录下，执行go test
+```bash
+PASS
+ok      example.com/user/hello/morestrings      0.194s
+```
